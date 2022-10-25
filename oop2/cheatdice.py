@@ -29,3 +29,8 @@ class Cheat_Loaded_Dice(Player): # inheritance of Player
             if self.dice[i] < 6:
                 self.dice[i] += 1
             i += 1
+# allows user to to gey max roll all the time
+class Cheat_Better(Player): # inheritance of Player
+    def cheat(self):
+        self.dice = [6,6,6]
+
